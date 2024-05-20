@@ -58,7 +58,7 @@ class BaseModel():
         obj_dict = {}
         obj_dict["__class__"] = self.__class__.__name__
         for key, value in self.__dict__.items():
-            if isinstance(value, (dt, )):
+            if isinstance(value, dt):
                 obj_dict[key] = value.isoformat()
             else:
                 obj_dict[key] = value
