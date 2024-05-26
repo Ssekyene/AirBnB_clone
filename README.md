@@ -59,4 +59,4 @@ $
 
 ## Authors
 Project Author:
-[Mithamo Beth](https://github.com/Mythamor#hi-there-)
+[Ssekyene Robert](https://github.com/Ssekyene#hi-there-)
