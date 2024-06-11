@@ -12,3 +12,15 @@ class State(BaseModel):
         name: (str)
     """
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """
+        Initialize attributes: those inherited from BaseModel
+        and those specific to State
+        """
+        super().__init__()
+        if kwargs and kwargs != []:
+            try:
+                self.name = kwargs["name"]
+            except KeyError:
+                pass

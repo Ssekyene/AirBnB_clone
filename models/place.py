@@ -32,3 +32,25 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
+
+    def __init__(self, *args, **kwargs):
+        """
+        Initialize attributes: those inherited from BaseModel
+        and those specific to Place
+        """
+        super().__init__()
+        if kwargs and kwargs != []:
+            try:
+                self.city_id = kwargs["city_id"]
+                self.user_id = kwargs["user_id"]
+                self.name = kwargs["name"]
+                self.description = kwargs["description"]
+                self.number_rooms = kwargs["number_rooms"]
+                self.number_bathrooms = kwargs["number_bathrooms"]
+                self.max_guest = kwargs["max_guest"]
+                self.price_by_night = kwargs["price_by_night"]
+                self.latitude = kwargs["latitude"]
+                self.longitude = kwargs["longitude"]
+                self.amenity_ids = kwargs["amenity_ids"]
+            except KeyError:
+                pass

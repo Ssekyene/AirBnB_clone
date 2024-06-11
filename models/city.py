@@ -14,3 +14,16 @@ class City(BaseModel):
     """
     state_id = ""
     name = ""
+       
+    def __init__(self, *args, **kwargs):
+        """
+        Initialize attributes: those inherited from BaseModel
+        and those specific to City
+        """
+        super().__init__()
+        if kwargs and kwargs != []:
+            try:
+                self.state_id = kwargs["state_id"]
+                self.name = kwargs["name"]
+            except KeyError:
+                pass
