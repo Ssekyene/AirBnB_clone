@@ -20,7 +20,11 @@ class User(BaseModel):
         """
         super().__init__()
         if kwargs and kwargs != []:
-            self.email = kwargs["email"]
-            self.password = kwargs["password"]
-            self.first_name = kwargs["first_name"]
-            self.last_name = kwargs["last_name"]
+            try: 
+                self.email = kwargs["email"]
+                self.password = kwargs["password"]
+                self.first_name = kwargs["first_name"]
+                self.last_name = kwargs["last_name"]
+            except KeyError:
+                pass
+            
