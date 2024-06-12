@@ -14,7 +14,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
-
+import ast
 
 class HBNBCommand(cmd.Cmd):
     """
@@ -167,7 +167,7 @@ class HBNBCommand(cmd.Cmd):
             self.do_all(_class)
         elif command[0:5] == "show(":
             _id = command.split("(")[1][0:-1]
-            self.do_show(_class + " " + _id)
+            self.do_show(_class + " " + _id[1:-1])
         elif command[0:8] == "destroy(":
             _id = command.split("(")[1][0:-1]
             self.do_destroy(_class + " " + _id[1:-1])
