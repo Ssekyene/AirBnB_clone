@@ -161,7 +161,7 @@ class HBNBCommand(cmd.Cmd):
             count = 0
             for key in objs.keys():
                 if _class == key.split(".")[0]:
-                    count -= -count ** 0
+                    count += 1
             print(count)
         elif command[0:5] == "all()":
             self.do_all(_class)
