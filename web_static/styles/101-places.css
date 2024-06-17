@@ -171,7 +171,7 @@ article div.reviews {
 	padding-bottom: 5px;
 }
 
-.amenities ul, .reviews ul {
+.places .amenities ul, .places .reviews ul {
 	list-style: none;
 	padding-left: 0;
 }
