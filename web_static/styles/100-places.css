@@ -79,8 +79,8 @@ div.description {
         margin-top: 10px;
 }
 
-div.amenities,
-div.reviews {
+article div.amenities,
+article div.reviews {
 	text-align: left;
         margin-top: 40px;
         width: 100%;
