@@ -1,4 +1,5 @@
-# 0x00. AirBnB clone - The console
+# AirBnB clone - The console & Web static
+![snapshot](./console-webstatic.PNG)
 
 ## Welcome to the AirBnB clone project description!
 
