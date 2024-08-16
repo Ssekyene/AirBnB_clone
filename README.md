@@ -23,7 +23,7 @@ There are various commands we can prompt on our console:
 
 ## How to use command interpreter
 ### interactive mode:
-
+```
 $ ./console.py
 (hbnb) help
 
@@ -35,9 +35,9 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
-
+```
 ### non-interactive mode:
-
+```
 $ echo "help" | ./console.py
 (hbnb)
 
@@ -57,7 +57,26 @@ $ cat test_help | ./console.py
 EOF  help  quit
 (hbnb) 
 $
+```
 
-## Authors
-Project Author:
-[Ssekyene Robert](https://github.com/Ssekyene#hi-there-)
+## References
+- [cmd module](https://docs.python.org/3.8/library/cmd.html)
+- [cmd module in depth](https://pymotw.com/2/cmd/)
+- [uuid module](https://docs.python.org/3.8/library/uuid.html)
+- [datetime](https://docs.python.org/3.8/library/datetime.html)
+- [unittest module](https://docs.python.org/3.8/library/unittest.html#module-unittest)
+- [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+- [Python test cheatsheet](https://www.pythonsheets.com/notes/python-tests.html)
+- [cmd module wiki page](https://wiki.python.org/moin/CmdModule)
+- [python unittest](https://realpython.com/python-testing/)
+- [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/)
+- [Inline Styles in HTML](https://www.codecademy.com/article/html-inline-styles)
+- [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+- [CSS SpeciFishity](https://www.standardista.com/cgi-sys/suspendedpage.cgi)
+- [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [center boxes](https://css-tricks.com/centering-css-complete-guide/)
+- [Flexible boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+
